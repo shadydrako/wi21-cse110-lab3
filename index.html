@@ -5,6 +5,7 @@
     <title> Ravi Website</title>
     <meta name="description" content="HTML remake of Og website CSE 110">
     <meta name="author" content="Ravindran Gabriel Tapia">
+    <link rel="stylesheet" href="style.css">
     <style>
         table, th, td {
           border: 1px solid black;
@@ -28,6 +29,7 @@
                             My name is Ravindran Tapia, but I go by Ravi for short! I am currently a 2nd year Computer Science major at UCSD. I will be using this website as 
                             practice for HTML and give a little detail about myself.
                         </p>
+                        <aside> I also play a games such as League of Legends, Valorant ( I can't play right now ) due to my laptop can't handle. </aside> 
                     <hr>
                 </section>
                 <section>
@@ -87,7 +89,28 @@
                 
                 <br><br> 
 
-                <b>My favorite Quote</b>
+                <b> This is the picture I used for as my flirty discord bot</b>
+
+                <figure>
+                    <img src="https://i.pinimg.com/originals/8d/8d/98/8d8d98ca55ff59c7cd8527a87df36832.png" width="200" height="200">
+                    <figcaption> Flirty Bot profile picture</figcaption>
+                </figure>
+
+                <br><br>
+                <p> This is what I use most of my <code>for-loops</code> for</p>
+                <code>
+                    <a>
+                        int i = 0;
+                        while(i != 100 ){
+    
+                            System.out.println(" I like pie" );
+                            i++
+                        }
+                    </a>
+                </code>
+                <br><br>
+
+                <strong>My favorite Quote</strong>
                 <details>
                     <summary>
                         "What is my perfect crime? I break into Tiffany's at midnight. Do I go for the vault? No, I go for the chandelier. It's priceless.
@@ -101,6 +124,10 @@
             </div>
             <hr>
             <table>
+                <colgroup>
+                    <col span="2" style="background-color:blueviolet">
+                    <col style="background-color:black">
+                  </colgroup>
                 <caption><b> My Current Schedule </b>  </caption>
                 <thead>
                     <tr>
@@ -157,8 +184,36 @@
                                 <option> Sixth </option> 
                                 <option> Seventh </option>
                             </select>
+                            <br><br>
+                            <label for="pokemon-select">Choose a Pokemon:</label>
+                            <select id="pokemon-select">
+                                <optgroup label="Fire Type">
+                                    <option>Charmander</option>
+                                    <option>Chimchar</option>
+                                    <option>Cyndaquil</option>
+                                </optgroup>
+                                <optgroup label="Water Type">
+                                    <option> Piplup</option>
+                                    <option> Totodile</option>
+                                    <option> Squirtle</option>
+                                </optgroup>
+                                <optgroup label="Grass Type">
+                                    <option> Bulbasaur</option>
+                                    <option> Chikorita</option>
+                                    <option> Turtwig</option>
+                                </optgroup>
+                            </select>
 
                             <br><br>
+                            <p> Choose your favorite movie genre: </p>
+                            <input list="genres" name="genre" id="genre">
+                            <datalist id="genres">
+                              <option value="Action">
+                              <option value="Comedy">
+                              <option value="Romacne">
+                              <option value="Documentary">
+                            </datalist>
+                            <br><br> 
 
                             <b>Sex:</b>
                             <input type="radio" id="male" name="Gender" value="male">
@@ -208,12 +263,64 @@
 
                             <b> How many hours of sleep do you think I get? </b>
                             <input type="number" id="num" name="hours">
+
+                            <br><br>
+                            <p> What did you think of this random form? </p>
+                            <textarea id="randans" name="idk" rows="5" cols="50">I thought this form was fun and wierd and quirky wow!</textarea>
+                            <br><br>
                         </fieldset>   
                      </form>
             </section>  
         </div>
+        <button onclick="showContent()">Something cool ! (check bottom of page!)</button>
+        <template>
+            <h2> WAOW </h2>
+            <img src="https://i.pinimg.com/originals/af/7f/12/af7f125c647276aaa73304d77eb8ed7b.jpg" width="300" height="300">
+        </template>
+        <script>
+            function showContent() {
+              var temp = document.getElementsByTagName("template")[0];
+              var clon = temp.content.cloneNode(true);
+              document.body.appendChild(clon);
+            }
+            </script>
+        <section>
+            <h2> Some of my Favorite things</h2>
+            <ul>
+                <li> My favorite color is <span style="color:blue"> Blue </span></li>
+                <li>
+                    My favorite flowers are Sakura flowers because anime :))
+                    <br><br>
+                    <picture>
+                        <img src="https://images.japan-experience.com/guide-japon/32842/s880x460/sakura-712312_1920.jpg" alt="Flowers" width="600" height="400">
+                    </picture>
+                </li>
+                <li>
+                    A sound that makes me happy!
+                    <br><br>
+                    <audio controls>
+                        <source src="discord-notification.mp3" type="audio/mp4">
+                      Your browser does not support the audio element.
+                      </audio>
+                </li>
+                <li>
+                    My favorite shape is a circle, but I want it to be blue :DDD. I put two so it looks like eyes. 
+                    <br><br>
+
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="blue" />
+                      </svg>
+                      <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="blue" />
+                      </svg>
+                    
+                </li>
+            </ul>
+
+        </section>
 
         </main>
+
         <footer> Created by Ravi Tapia </footer> 
         <script>
             var c = document.getElementById("myCanvas");
