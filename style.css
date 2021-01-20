@@ -1,14 +1,57 @@
 #AboutMe{
-    text-align: center;
-    color:blue;
+    text-align: center; /* This makes all the texts in this section centered */
+    color:blue; /* This makes all of the text in the section blue */
 }
 
 #FunStuf{
-    text-align: center;
-    color: red;
+    text-align: center;/* This makes all the texts in this section centered */
+    color: red; /* This makes all of the text in the section red*/
 }
 
 #randform{
-    text-align: center;
+    text-align: center; /*  Similar to the comments above this */
     color: burlywood;
 }
+
+h1{
+    text-align: left;
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+footer{
+
+}
+
+nav{
+
+}
+
+p{
+
+}
+
+
+li{
+
+}
+
+ol{
+
+}
+
+b{
+
+}
+
+table{
+    
+}
+
