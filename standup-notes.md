@@ -9,3 +9,6 @@ Session 1:
       - Accomplished:
       
         - Selectors added
+        - Colors, background colors
+        - Borders
+        
