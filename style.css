@@ -1,57 +1,84 @@
 #AboutMe{
     text-align: center; /* This makes all the texts in this section centered */
     color:blue; /* This makes all of the text in the section blue */
+    border-style: solid;
+    border-width: thick;
+    border-color: rgb(0, 0, 0);
 }
 
-#FunStuf{
+#FunStuff{
     text-align: center;/* This makes all the texts in this section centered */
     color: red; /* This makes all of the text in the section red*/
+    border-style:solid;
+    border-color: rgb(70, 37, 48);
+    border-width: thick;
+    border-radius: 25px;
 }
 
 #randform{
     text-align: center; /*  Similar to the comments above this */
     color: burlywood;
+    border-style: dotted;
+    border-width: thick;
+    border-radius: 25px;
 }
 
 h1{
-    text-align: left;
-
+    text-align: center;
+    color: rgb(228, 164, 44);
+    border-style: dotted;
 }
 
 h2{
-
+    color: rgb(11, 11, 48);
+    background-color: rgb(112, 145, 165);
 }
 
 h3{
-
+    color: hsl(249, 20, 39);
+    background-color: rgb(112, 145, 165);
 }
 
-footer{
-
+footer{ 
+    background-color: hsla(350, 50, 50, 0.5);
 }
 
 nav{
 
+    color: #ABC;
+    background-color: rgba(0, 119, 255, 0.171);
+    border-style: double;
+    border-color: lightpink;
+    border-radius: 25px;
+
 }
 
 p{
-
+    color: #BF1FFA;
+    background-color: gold;
 }
 
 
 li{
-
+    color: grey;
+    background-color: powderblue;
 }
 
 ol{
-
+    color: teal;
+    background-color: lightblue;
 }
 
 b{
-
+    color: blueviolet;
 }
 
 table{
-    
+    background-color: bisque;
+
+}
+
+body{
+    background-color: paleturquoise;
 }
 
