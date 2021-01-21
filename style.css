@@ -18,29 +18,40 @@
 #randform{
     text-align: center; /*  Similar to the comments above this */
     color: burlywood;
-    border-style: dotted;
-    border-width: thick;
-    border-radius: 25px;
+    width:1000px;
+    border:50px dotted #7373; 
+    padding:25px 40px 30px 65px;
+    margin-top: 100px;
+    margin-bottom:100px;
+    margin-right:100px;
+    margin-left: 100px;
+
 }
 
 h1{
     text-align: center;
     color: rgb(228, 164, 44);
-    border-style: dotted;
+    width:300px;
+    border: 15px solid rgb(151, 46, 177);
+    padding: 50px;
+    margin: auto;
 }
-
 h2{
     color: rgb(11, 11, 48);
     background-color: rgb(112, 145, 165);
+    border-style: inset;
+    position: relative;
 }
 
 h3{
     color: hsl(249, 20, 39);
     background-color: rgb(112, 145, 165);
+    position: absolute;
 }
 
 footer{ 
     background-color: hsla(350, 50, 50, 0.5);
+    position: absolute;
 }
 
 nav{
@@ -50,23 +61,29 @@ nav{
     border-style: double;
     border-color: lightpink;
     border-radius: 25px;
+    position: absolute;
+    height: 100px;
+    width: 400px;
 
 }
 
 p{
-    color: #BF1FFA;
+    color: #BF1FFA; 
     background-color: gold;
+    position: relative;
 }
 
 
 li{
-    color: grey;
+    color: grey; /* Absolute */
     background-color: powderblue;
+    position: relative
 }
 
 ol{
     color: teal;
     background-color: lightblue;
+    position: relative;
 }
 
 b{
@@ -75,10 +92,19 @@ b{
 
 table{
     background-color: bisque;
+    /*Box model */
+    width:300px;
+    border: 15px solid green;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 20px;
+    margin: 20px 30px 30px 200px;
 
 }
 
 body{
     background-color: paleturquoise;
+    position: relative;
 }
 
