@@ -162,6 +162,23 @@ body{
     }
 }
 
+.friends {
+    display: grid;
+    grid-gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: end;
+  }
+  .friends > div {
+    background: #733fc08a;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  body {
+    margin: 20px 20px 20px 20px;
+    font: 15px;
+  }
+
 
 
 
