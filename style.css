@@ -14,6 +14,9 @@
     border-width: thick;
     border-radius: 25px;
 }
+#FunStuff:hover{
+    background-color: hotpink;
+}
 
 #randform{
     text-align: center; /*  Similar to the comments above this */
@@ -25,8 +28,14 @@
     margin-bottom:100px;
     margin-right:100px;
     margin-left: 100px;
+}
+
+a:active{
+    background-color:rgb(185, 214, 20);
+    font-family: cursive;
 
 }
+
 
 h1{
     text-align: center;
@@ -122,8 +131,37 @@ table{
     
 
 }
+.characters{
+  background: grey;  
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 40px;
+  margin: 40px;
 
-body{
-    background-color: paleturquoise;
 }
+
+.characters-item{
+    flex-basis: auto;
+    align-self: auto;
+    padding: 50px 50px 50px 50px;
+    background: blue;
+    color: black;
+    
+}
+
+
+    body{
+        background-color: paleturquoise;
+    }
+
+@media screen and (max-width: 750px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+
+
+
 
